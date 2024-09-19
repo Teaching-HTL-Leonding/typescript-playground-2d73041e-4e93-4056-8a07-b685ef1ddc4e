@@ -25,4 +25,7 @@ function setup() {
 
     fill("black")
     line(280, 330, 330, 330)
+
+    fill("#ebbfc8")
+    triangle(240, 320, 250, 330, 260, 320)
 }
