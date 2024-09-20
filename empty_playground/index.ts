@@ -1,21 +1,16 @@
 function setup() {
     createCanvas(500, 500);
-    frameRate(60);
+    background("gold");
 }
 
-let x = 10;
-let direction = 5;
+function mouseClicked() {
+    fill("red");
+    stroke(1);
+    circle(mouseX, mouseY, 30);
 
-function draw() {
-    background("black");
-    circle(width / 2, height / 2, x);
-    x += direction;
-
-    if (x >= width) {
-        direction = -5;
-    }
-
-    if (x <= 0) {
-        direction = +5;
-    }
+    fill("gold");
+    noStroke();
+    rect(50, height - 40, width / 2, 30);
+    fill("black");
+    text(`X: ${mouseX} | Y: ${mouseY}`, 50, height - 20);
 }
