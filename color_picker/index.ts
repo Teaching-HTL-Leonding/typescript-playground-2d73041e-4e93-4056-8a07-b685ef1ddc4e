@@ -1,10 +1,13 @@
 function setup() {
     createCanvas(500, 300);
-    colorMode(HSB);
 }
 
 function mouseMoved() {
-    background(activeHue, 100, 100);
+    colorMode(HSB);
+    fill(activeHue, activeSat, 100);
+    noStroke();
+    rect(0, 0, width, height / 2)
+
 
     if (mouseY) {
         activeSat += 25;
