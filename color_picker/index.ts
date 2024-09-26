@@ -4,19 +4,28 @@ function setup() {
 }
 
 function mouseMoved() {
-    background(activeColor, 100, 100);
-    activeColor += 5;
+    background(activeHue, 100, 100);
 
-    if (activeColor > 360) {
-        activeColor = 0;
+    if (mouseY) {
+        activeSat += 25;
+        if (activeHue > 100) {
+            activeHue = 0;
+        }
+    }
+
+    if (mouseX) {
+        activeHue += 5;
+        if (activeHue > 360) {
+            activeHue = 0;
+        }
     }
 }
-let activeColor = 0;
+let activeHue = 0;
+let activeSat = 0;
 
-// let colorPicker = activeColor;
 
 function mouseClicked() {
-    fill(colorPicker, 100, 100);
+    fill(activeHue, activeSat, 100);
     noStroke();
     rect(0, height - 150, width, height / 2);
 }
