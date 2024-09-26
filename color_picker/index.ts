@@ -23,7 +23,6 @@ function mouseMoved() {
 let activeHue = 0;
 let activeSat = 0;
 
-
 function mouseClicked() {
     fill(activeHue, activeSat, 100);
     noStroke();
