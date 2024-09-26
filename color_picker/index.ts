@@ -1,9 +1,9 @@
 function setup() {
     createCanvas(500, 300);
+    colorMode(HSB);
 }
 
 function mouseMoved() {
-    colorMode(HSB);
     fill(activeHue, activeSat, 100);
     noStroke();
     rect(0, 0, width, height / 2);
@@ -30,4 +30,7 @@ function mouseClicked() {
     fill(activeHue, activeSat, 100);
     noStroke();
     rect(0, height - 150, width, height / 2);
+
+    fill("black");
+    text(`H ${activeHue} S: ${activeSat} B: 100`, 10, height - 10);
 }
