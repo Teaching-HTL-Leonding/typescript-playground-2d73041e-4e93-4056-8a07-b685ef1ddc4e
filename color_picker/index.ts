@@ -6,18 +6,18 @@ function mouseMoved() {
     colorMode(HSB);
     fill(activeHue, activeSat, 100);
     noStroke();
-    rect(0, 0, width, height / 2)
+    rect(0, 0, width, height / 2);
 
 
     if (mouseY) {
-        activeSat += 25;
+        activeSat += 1;
         if (activeHue > 100) {
             activeHue = 0;
         }
     }
 
     if (mouseX) {
-        activeHue += 5;
+        activeHue += 2;
         if (activeHue > 360) {
             activeHue = 0;
         }
