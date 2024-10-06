@@ -13,6 +13,22 @@ function setup() {
     rect(width / 2, 0, width /2);
     fill("red");
     rect(width / 2, height / 2, width /2);
+
+    // Selected Color Display
+    fill("black");
+    rect(width / 2 * 0.5, height / 2 * 0.5, width / 4);
+    rect(width / 2 * 1, height / 2 * 0.5, width / 4);
 }
 
-// <<< Add the function `moveClicked` with the required code here
+let selectedColor;
+
+function mouseClicked() {
+
+
+    fill("white");
+    text(selectedColor, width / 2 * 0.5, height / 2);
+
+    if(mouseX < width / 2) {
+        selectedColor = "Yellow";
+    }
+}
