@@ -25,8 +25,9 @@ let selectedColor;
 function mouseClicked() {
 
 
+    textAlign(CENTER);
     fill("white");
-    text(selectedColor, width / 2 * 0.5, height / 2);
+    text(selectedColor, width / 2 * 0.5, width / 2 * 0.5, height / 2);
 
     if(mouseX < width / 2) {
         selectedColor = "Yellow";
