@@ -27,9 +27,19 @@ function mouseClicked() {
 
     textAlign(CENTER);
     fill("white");
-    text(selectedColor, width / 2 * 0.5, width / 2 * 0.5, height / 2);
+    textSize(30);
+    text(selectedColor, width / 2, height / 2 * 1.1);
 
     if(mouseX < width / 2 && mouseY < height / 2) {
         selectedColor = "Yellow";
+    }
+    if(mouseX > width / 2 && mouseY < height / 2) {
+        selectedColor = "Green";
+    }
+    if(mouseX < width / 2 && mouseY > height / 2) {
+        selectedColor = "Blue";
+    }
+    if(mouseX > width / 2 && mouseY > height / 2) {
+        selectedColor = "Red";
     }
 }
