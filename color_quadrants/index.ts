@@ -23,6 +23,10 @@ function setup() {
 let selectedColor;
 
 function mouseClicked() {
+    // Selected Color Display
+    fill("black");
+    rect(width / 2 * 0.5, height / 2 * 0.5, width / 4);
+    rect(width / 2 * 1, height / 2 * 0.5, width / 4);
 
 
     textAlign(CENTER);
