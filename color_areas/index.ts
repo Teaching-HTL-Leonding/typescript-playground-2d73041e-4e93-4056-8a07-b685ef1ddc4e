@@ -23,11 +23,9 @@ function mouseClicked() {
         text("Yellow", width / 2, height - 30)
     }
 
-    if (mouseX > width / 3 || width < width / 3 * 2) {
+    if (mouseX > width / 3 || mouseX > width / 3 * 2) {
         text("Red", width / 2, height - 30)
-    } 
-
-    if (mouseX > width / 3 * 2) {
+    } else if (mouseX > width / 3 * 2) {
         text("Green", width / 2, height - 30)
     }
 
