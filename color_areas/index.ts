@@ -13,6 +13,9 @@ function setup() {
 
 
 function mouseClicked() {
+
+    fill("black")
+    rect(0, height / 6.6, width)
     textSize(30);
     fill("white");
     textAlign(CENTER);
@@ -27,5 +30,12 @@ function mouseClicked() {
     if (mouseX > width / 3 * 2) {
         text("Green", width / 2, height - 30)
     }
+
+    fill("yellow")
+    rect(0, 0, width / 3);
+    fill("red")
+    rect(width  / 3, 0, width / 3);
+    fill("green")
+    rect(width * 2 / 3, 0, width / 3);
 
 }
