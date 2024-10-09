@@ -2,17 +2,29 @@ function setup() {
   createCanvas(300, 200);
 }
 
-let circleX;
-let circleY;
-let circleSize = 50;
-let velocity = 2;
+const circleDiameter = 50;
 
+let circlePoseX = 0;
+let circlePoseY = 0;
+let direction = 2;
+
+// Remember: The _draw_ method is called FOR EVERY FRAME
 function draw() {
-  background("yellow")
-  circleX ++;
-  circleY += velocity;
+  background("gold");
 
-  fill("red");
-  circle(circleX, circleY, circleSize);
+  stroke("white");
+  strokeWeight(3);
+  fill("lime");
+  circle(circlePoseX, circlePoseY, circleDiameter);
 
+  circlePoseX += direction;
+  circlePoseY += direction;
+
+  //                         +----------------------------- OR operator
+  //                         |
+  //                         v
+  if (circlePoseX >= height || circlePoseX <= 0) {
+    // Reverse sign of direction (positive -> right, negative -> left)
+    direction *= -1;
+  }
 }
