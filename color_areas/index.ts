@@ -13,6 +13,9 @@ function setup() {
 
 
 function mouseClicked() {
+    fill("black");
+    rect(0, width / 3, width);
+
     textSize(30);
     fill("white");
     textAlign(CENTER);
