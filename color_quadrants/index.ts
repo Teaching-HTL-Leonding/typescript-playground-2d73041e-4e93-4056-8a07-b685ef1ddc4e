@@ -15,8 +15,7 @@ function setup() {
 
     // Selected Color Display
     fill("black");
-    rect(width / 2 * 0.5, height / 2 * 0.5, width / 4);
-    rect(width / 2 * 1, height / 2 * 0.5, width / 4);
+    rect(width / 4, height / 2 * 0.75, width / 2, height /4);
 }
 
 let selectedColor;
@@ -38,8 +37,7 @@ function mouseClicked() {
 
     // Clear and update the Selected Color Display
     fill("black");
-    rect(width / 2 * 0.5, height / 2 * 0.5, width / 4);
-    rect(width / 2 * 1, height / 2 * 0.5, width / 4);
+    rect(width / 4, height / 2 * 0.75, width / 2, height /4);
 
     textAlign(CENTER);
     fill("white");
