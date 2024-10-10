@@ -7,6 +7,7 @@ const circleDiameter = 50;
 let circleCenterX = 0;
 let circleCenterY = 0;
 let direction = 2;
+let direction2 = 2;
 
 // Remember: The _draw_ method is called FOR EVERY FRAME
 function draw() {
@@ -28,8 +29,8 @@ function draw() {
 
   fill("cyan");
   circle(width / 2, circleCenterY, circleDiameter);
-  circleCenterY += direction;
+  circleCenterY += direction2;
   if (circleCenterY > height || circleCenterY <= 0) {
-    direction *= -1; 
+    direction2 *= -1; 
   }
 }
