@@ -16,11 +16,11 @@ function setup() {
 
 
   textAlign(CENTER, CENTER);
-  text(`${num % 10}`, width / 10.5, height / 3, width / 10, height / 4);
-  text(`${num % 10}`, width / 10.5 * 2.5, height / 3, width / 10, height / 4);
-  text(`${num % 10}`, width / 10.5 * 4, height / 3, width / 10, height / 4);
-  text(`${num % 10}`, width / 10.5 * 5.5, height / 3, width / 10, height / 4);
-  text(`${num % 10}`, width / 10.5 * 7, height / 3, width / 10, height / 4);
+  text(`${Math.floor((num / 100000) % 10)}`, width / 10.5, height / 3, width / 10, height / 4);
+  text(`${Math.floor((num / 10000) % 10)}`, width / 10.5 * 2.5, height / 3, width / 10, height / 4);
+  text(`${Math.floor((num / 1000) % 10)}`, width / 10.5 * 4, height / 3, width / 10, height / 4);
+  text(`${Math.floor((num / 100) % 10)}`, width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+  text(`${Math.floor((num / 10) % 10)}`, width / 10.5 * 7, height / 3, width / 10, height / 4);
   text(`${num % 10}`, width / 10.5 * 8.5, height / 3, width / 10, height / 4);
 
   textAlign(CENTER, CENTER);
