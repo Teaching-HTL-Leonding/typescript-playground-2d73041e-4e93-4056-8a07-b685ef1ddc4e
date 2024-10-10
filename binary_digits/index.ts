@@ -1,7 +1,7 @@
 function setup() {
   createCanvas(500, 500);
   background("black");
-  const num = Math.floor(random(0, 100));
+  const num = Math.floor(random(0, 64));
 
   // Add the necessary code here
 
