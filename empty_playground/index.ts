@@ -1,16 +1,42 @@
 function setup() {
-    createCanvas(500, 500);
-    background("gold");
-}
+  createCanvas(500, 500);
+  background("black");
 
-function mouseClicked() {
-    fill("red");
-    stroke(1);
-    circle(mouseX, mouseY, 30);
+  stroke("yellow");
+  noFill();
+  rect(width / 2 * 0.84, height / 2 * 1.5, width / 6, 30, 10);
+  textAlign(CENTER);
+  text("Generate", width / 2, height / 2 * 1.58);
 
-    fill("gold");
-    noStroke();
-    rect(50, height - 40, width / 2, 30);
-    fill("black");
-    text(`X: ${mouseX} | Y: ${mouseY}`, 50, height - 20);
+  if (mouseX === width / 2 && height / 2 * 1.58) {
+    num = Math.floor(random(0, 64))
+  }
+
+
+  let num = 0;
+
+  // Add the necessary code here
+
+  stroke("yellow");
+  noFill();
+  rect(width / 10.5, height / 3, width / 10, height / 4);
+  rect(width / 10.5 * 2.5, height / 3, width / 10, height / 4);
+  rect(width / 10.5 * 4, height / 3, width / 10, height / 4);
+  rect(width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+  rect(width / 10.5 * 7, height / 3, width / 10, height / 4);
+  rect(width / 10.5 * 8.5, height / 3, width / 10, height / 4);
+
+
+  textAlign(CENTER, CENTER);
+  text(`${Math.floor((num / 32) % 2)}`, width / 10.5, height / 3, width / 10, height / 4);
+  text(`${Math.floor((num / 16) % 2)}`, width / 10.5 * 2.5, height / 3, width / 10, height / 4);
+  text(`${Math.floor((num / 8) % 2)}`, width / 10.5 * 4, height / 3, width / 10, height / 4);
+  text(`${Math.floor((num / 4) % 2)}`, width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+  text(`${Math.floor((num / 2) % 2)}`, width / 10.5 * 7, height / 3, width / 10, height / 4);
+  text(`${num % 2}`, width / 10.5 * 8.5, height / 3, width / 10, height / 4);
+
+  textAlign(CENTER, CENTER);
+  fill("yellow");
+  noStroke();
+  text(num, width / 2, height - 20);
 }
