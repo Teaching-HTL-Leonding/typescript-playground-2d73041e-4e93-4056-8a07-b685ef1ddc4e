@@ -25,6 +25,28 @@ function setup() {
   text(`${Math.floor(remainder2)}`, width / 3 * 1.1, height / 3, width / 10, height / 4);
   text(`${Math.floor(remainder1)}`, width / 3 * 1.6, height / 3, width / 10, height / 4);
 
+  if (remainder1 === 10) {
+      text(`A`, width / 6 * 1.2, height / 3, width / 10, height / 4);
+  } else if () {
+    text(`${Math.floor(remainder3)}`, width / 6 * 1.2, height / 3, width / 10, height / 4);
+  }
+  
+    if (remainder1 === 11) {
+      text(`B`, width / 6 * 1.2, height / 3, width / 10, height / 4);
+  }
+    if (remainder1 === 12) {
+      text(`C`, width / 6 * 1.2, height / 3, width / 10, height / 4);
+  }
+    if (remainder1 === 13) {
+      text(`D`, width / 6 * 1.2, height / 3, width / 10, height / 4);
+  }
+    if (remainder1 === 14) {
+      text(`E`, width / 6 * 1.2, height / 3, width / 10, height / 4);
+  }
+    if (remainder1 === 15) {
+      text(`F`, width / 6 * 1.2, height / 3, width / 10, height / 4);
+  }
+
   textAlign(CENTER, CENTER);
   fill("yellow");
   noStroke();
