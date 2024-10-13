@@ -38,3 +38,5 @@ function drawHexCharacter(remainder, x, y) {
   }
   text(hexChar, x, y, width / 10, height / 4);
 }
+
+// Darf man das so? Also das man +55 rechnet weil dann ist man ja bei den Buchstaben...Quelle: https://de.wikipedia.org/wiki/Hexadezimalsystem
