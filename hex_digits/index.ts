@@ -2,7 +2,6 @@ function setup() {
   createCanvas(500, 500);
   background("black");
   const num = Math.floor(random(0, 10000));
-  // Add the necessary code here
 
   stroke("yellow");
   noFill();
@@ -10,45 +9,32 @@ function setup() {
   rect(width / 2, height / 3, width / 6, height / 4);
   rect(width / 6, height / 3, width / 6, height / 4);
 
+  let newNum1 = Math.floor(num / 16);
+  let remainder1 = num % 16;
 
-  let newNum1 = Math.floor(num / 16);  // Erste Division, gibt den Quotienten
-  let remainder1 = num % 16;  // Erster Rest (letzte Hexadezimalstelle)
+  let newNum2 = Math.floor(newNum1 / 16);
+  let remainder2 = newNum1 % 16;
 
-  let newNum2 = Math.floor(newNum1 / 16);  // Zweite Division
-  let remainder2 = newNum1 % 16;  // Zweiter Rest
-
-  let newNum3 = Math.floor(newNum2 / 16);  // Dritte Division (Endwert wird 0)
-  let remainder3 = newNum2 % 16;  // Dritter Rest
-
-  textAlign(CENTER, CENTER);
-  text(`${Math.floor(remainder3)}`, width / 6 * 1.2, height / 3, width / 10, height / 4);
-  text(`${Math.floor(remainder2)}`, width / 3 * 1.1, height / 3, width / 10, height / 4);
-  text(`${Math.floor(remainder1)}`, width / 3 * 1.6, height / 3, width / 10, height / 4);
-
-  if (remainder1 === 10) {
-      text(`A`, width / 6 * 1.2, height / 3, width / 10, height / 4);
-  } else if () {
-    text(`${Math.floor(remainder3)}`, width / 6 * 1.2, height / 3, width / 10, height / 4);
-  }
-  
-    if (remainder1 === 11) {
-      text(`B`, width / 6 * 1.2, height / 3, width / 10, height / 4);
-  }
-    if (remainder1 === 12) {
-      text(`C`, width / 6 * 1.2, height / 3, width / 10, height / 4);
-  }
-    if (remainder1 === 13) {
-      text(`D`, width / 6 * 1.2, height / 3, width / 10, height / 4);
-  }
-    if (remainder1 === 14) {
-      text(`E`, width / 6 * 1.2, height / 3, width / 10, height / 4);
-  }
-    if (remainder1 === 15) {
-      text(`F`, width / 6 * 1.2, height / 3, width / 10, height / 4);
-  }
+  let newNum3 = Math.floor(newNum2 / 16);
+  let remainder3 = newNum2 % 16;
 
   textAlign(CENTER, CENTER);
+  // Zeichne die Hexadezimalstellen
+  drawHexCharacter(remainder3, width / 6 * 1.2, height / 3);
+  drawHexCharacter(remainder2, width / 3 * 1.1, height / 3);
+  drawHexCharacter(remainder1, width / 3 * 1.6, height / 3);
+
   fill("yellow");
   noStroke();
   text(num, width / 2, height - 20);
+}
+
+function drawHexCharacter(remainder, x, y) {
+  let hexChar;
+  if (remainder >= 10) {
+    hexChar = String.fromCharCode(55 + remainder);
+  } else {
+    hexChar = remainder;
+  }
+  text(hexChar, x, y, width / 10, height / 4);
 }
