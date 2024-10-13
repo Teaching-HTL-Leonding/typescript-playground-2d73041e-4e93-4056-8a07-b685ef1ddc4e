@@ -15,9 +15,9 @@ function setup() {
 
 
   textAlign(CENTER, CENTER);
-  text(`${Math.floor((num / 32) % 2)}`, width / 10.5, height / 3, width / 10, height / 4);
-  text(`${Math.floor((num / 16) % 2)}`, width / 10.5 * 2.5, height / 3, width / 10, height / 4);
-  text(`${Math.floor((num / 8) % 2)}`, width / 10.5 * 4, height / 3, width / 10, height / 4);
+  text(`${Math.floor((num / 32) % 2)}`, width / 6 * 1.2, height / 3, width / 10, height / 4);
+  text(`${Math.floor((num / 16) % 2)}`, width / 3 * 1.1, height / 3, width / 10, height / 4);
+  text(`${Math.floor((num / 8) % 2)}`, width / 3 * 1.6, height / 3, width / 10, height / 4);
 
   textAlign(CENTER, CENTER);
   fill("yellow");
