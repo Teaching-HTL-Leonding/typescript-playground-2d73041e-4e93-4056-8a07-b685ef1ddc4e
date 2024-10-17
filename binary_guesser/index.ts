@@ -85,7 +85,12 @@ function mouseClicked() {
   }
 
 
-  if (digit1 * 1 === ) {}
+  if (num = digit1 * Math.pow(2, 3) + digit2 * Math.pow(2, 2) + digit3 * Math.pow(2, 1) + digit4 * Math.pow(2, 0)) {
+    fill("green");
+    noStroke();
+    textSize(30);
+    text("Correct", width / 2, height / 1.3);
+  }
 
   // text(`${Math.floor(num / 8 % 2)}`, width / 10.5 * 2.5, height / 3,)
   // text(`${Math.floor(num / 4 % 2)}`, width / 10.5 * 4, height / 3)
