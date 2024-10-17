@@ -1,4 +1,8 @@
 let num = 0;
+let digit1 = 0;
+let digit2 = 0;
+let digit3 = 0;
+let digit4 = 0;
 
 function setup() {
   num = Math.floor(random(0, 16));
@@ -35,15 +39,22 @@ function mouseClicked() {
   if (mouseX > width / 10.5 * 2.5 && mouseX < width / 10.5 * 4) {
     fill("black");
     rect(width / 10.5 * 2.5, height / 3, width / 10, height / 4);
+
+    if (digit4 === 0) {
+      digit4 = 1;
+    } else {
+      digit4 = 0;
+    }
+
     fill("yellow")
-    text(`${Math.floor(num / 8 % 2)}`, width / 10.5 * 3, height / 2.2)
+    text(`${digit4}`, width / 10.5 * 3, height / 2.2)
   }
 
   if (mouseX > width / 10.5 * 4 && mouseX < width / 10.5 * 5.5) {
     fill("black");
     rect(width / 10.5 * 4, height / 3, width / 10, height / 4);
     fill("yellow")
-    text(`${Math.floor(num / 8 % 2)}`, width / 10.5 * 3, height / 2.2)
+    text(``, width / 10.5 * 3, height / 2.2)
   }
 
 }
