@@ -53,8 +53,41 @@ function mouseClicked() {
   if (mouseX > width / 10.5 * 4 && mouseX < width / 10.5 * 5.5) {
     fill("black");
     rect(width / 10.5 * 4, height / 3, width / 10, height / 4);
+
+    if (digit3 === 0) {
+      digit3 = 1;
+    } else {
+      digit3 = 0;
+    }
+
     fill("yellow")
-    text(``, width / 10.5 * 3, height / 2.2)
+    text(`${digit3}`, width / 10.5 * 4.5, height / 2.2)
+  }
+
+  if (mouseX > width / 10.5 * 5.5 && mouseX < width / 10.5 * 7.5) {
+    fill("black");
+    rect(width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+    if (digit2 === 0) {
+      digit2 = 1;
+    } else {
+      digit2 = 0;
+    }
+
+    fill("yellow")
+    text(`${digit2}`, width / 10.5 * 6, height / 2.2)
+  }
+
+  if (mouseX < width / 10.5 * 7.5) {
+    fill("black");
+    rect(width / 10.5 * 7, height / 3, width / 10, height / 4);
+    if (digit1 === 0) {
+      digit1 = 1;
+    } else {
+      digit1 = 0;
+    }
+
+    fill("yellow")
+    text(`${digit1}`, width / 10.5 * 7.5, height / 2.2)
   }
 
 }
