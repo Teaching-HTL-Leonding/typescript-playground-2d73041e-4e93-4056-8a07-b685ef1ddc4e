@@ -90,12 +90,4 @@ function mouseClicked() {
     noStroke();
     text("Correct", width / 2, height / 1.3);
   }
-
-  // text(`${Math.floor(num / 8 % 2)}`, width / 10.5 * 2.5, height / 3,)
-  // text(`${Math.floor(num / 4 % 2)}`, width / 10.5 * 4, height / 3)
-  // text(`${Math.floor(num / 2 % 2)}`, width / 10.5 * 5.5, height / 3)
-  // text(`${Math.floor(num % 2)}`, width / 10.5 * 7, height / 3)
-
-
-
 }
