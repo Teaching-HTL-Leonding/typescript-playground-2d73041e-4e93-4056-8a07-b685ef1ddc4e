@@ -61,6 +61,99 @@ function setup() {
 }
 
 
+
+
+
+
+
+
+
+
+  if (num % 16 === 10) {
+    fill("black");
+    rect(width / 10.5 * 4, height / 3, width / 10, height / 4);
+    text(`A`, width / 10.5 * 2.5, height / 3, width / 10, height / 4);
+  }
+
+  if (num % 16 === 11) {
+  fill("black");
+  rect(width / 10.5 * 4, height / 3, width / 10, height / 4);
+  text(`B`, width / 10.5 * 2.5, height / 3, width / 10, height / 4);
+}
+
+  if (num % 16 === 12) {
+  fill("black");
+  rect(width / 10.5 * 4, height / 3, width / 10, height / 4);
+  text(`C`, width / 10.5 * 4, height / 3, width / 10, height / 4);
+}
+
+  if (num % 16 === 13) {
+  fill("black");
+  rect(width / 10.5 * 4, height / 3, width / 10, height / 4);
+  text(`D`, width / 10.5 * 4, height / 3, width / 10, height / 4);
+}
+
+  if (num % 16 === 14) {
+  fill("black");
+  rect(width / 10.5 * 4, height / 3, width / 10, height / 4);
+  text(`E`, width / 10.5 * 4, height / 3, width / 10, height / 4);
+}
+
+  if (num % 16 === 15) {
+  fill("black");
+  rect(width / 10.5 * 4, height / 3, width / 10, height / 4);
+  text(`F`, width / 10.5 * 4, height / 3, width / 10, height / 4);
+}
+
+
+
+
+
+
+
+
+  if (num % 16 === 10) {
+    fill("black");
+    rect(width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+    text(`A`, width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+  }
+
+  if (num % 16 === 11) {
+  fill("black");
+  rect(width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+  text(`B`, width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+}
+
+  if (num % 16 === 12) {
+  fill("black");
+  rect(width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+  text(`C`, width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+}
+
+  if (num % 16 === 13) {
+  fill("black");
+  rect(width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+  text(`D`, width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+}
+
+  if (num % 16 === 14) {
+  fill("black");
+  rect(width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+  text(`E`,width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+}
+
+  if (num % 16 === 15) {
+  fill("black");
+  rect(width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+  text(`F`, width / 10.5 * 5.5, height / 3, width / 10, height / 4);
+}
+
+
+
+
+
+
+
   textAlign(CENTER, CENTER);
   fill("yellow");
   noStroke();
