@@ -26,12 +26,6 @@ function setup() {
   text(`0`, width / 10.5 * 6, height / 2.2);
   text(`0`, width / 10.5 * 7.5, height / 2.2);
 
-
-  // text(`${Math.floor(num / 8 % 2)}`, width / 10.5 * 2.5, height / 3,)
-  // text(`${Math.floor(num / 4 % 2)}`, width / 10.5 * 4, height / 3)
-  // text(`${Math.floor(num / 2 % 2)}`, width / 10.5 * 5.5, height / 3)
-  // text(`${Math.floor(num % 2)}`, width / 10.5 * 7, height / 3)
-
 }
 
 function mouseClicked() {
@@ -64,7 +58,7 @@ function mouseClicked() {
     text(`${digit3}`, width / 10.5 * 4.5, height / 2.2)
   }
 
-  if (mouseX > width / 10.5 * 5.5 && mouseX < width / 10.5 * 7.5) {
+  if (mouseX > width / 10.5 * 5.5 && mouseX < width / 10.5 * 7) {
     fill("black");
     rect(width / 10.5 * 5.5, height / 3, width / 10, height / 4);
     if (digit2 === 0) {
@@ -77,7 +71,7 @@ function mouseClicked() {
     text(`${digit2}`, width / 10.5 * 6, height / 2.2)
   }
 
-  if (mouseX < width / 10.5 * 7.5) {
+  if (mouseX > width / 10.5 * 7.5) {
     fill("black");
     rect(width / 10.5 * 7, height / 3, width / 10, height / 4);
     if (digit1 === 0) {
@@ -89,5 +83,15 @@ function mouseClicked() {
     fill("yellow")
     text(`${digit1}`, width / 10.5 * 7.5, height / 2.2)
   }
+
+
+  if (digit1 * 1 === ) {}
+
+  // text(`${Math.floor(num / 8 % 2)}`, width / 10.5 * 2.5, height / 3,)
+  // text(`${Math.floor(num / 4 % 2)}`, width / 10.5 * 4, height / 3)
+  // text(`${Math.floor(num / 2 % 2)}`, width / 10.5 * 5.5, height / 3)
+  // text(`${Math.floor(num % 2)}`, width / 10.5 * 7, height / 3)
+
+
 
 }
