@@ -39,7 +39,7 @@ function mouseClicked() {
     text(`${Math.floor(num / 8 % 2)}`, width / 10.5 * 3, height / 2.2)
   }
 
-  if (mouseX < width / 10.5 * 4 && mouseX < width / 10.5 * 5.5) {
+  if (mouseX > width / 10.5 * 4 && mouseX < width / 10.5 * 5.5) {
     fill("black");
     rect(width / 10.5 * 4, height / 3, width / 10, height / 4);
     fill("yellow")
