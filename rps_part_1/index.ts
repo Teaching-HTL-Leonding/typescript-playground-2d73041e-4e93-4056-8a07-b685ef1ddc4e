@@ -40,14 +40,24 @@ function mouseMoved() {
         textSize(75);
         text(`🪨`, STONE_LEFT, 75 * 2);
     }
-
+    
     if (mouseX >= PAPER_LEFT && mouseX <= SCISSORS_LEFT && mouseY <= 175 && mouseY >= 75) {
+
+        stroke("yellow");
+        fill("black");
+        rect(PAPER_LEFT, 75, 105)
+        textSize(75);
+        text(`📃`, PAPER_LEFT, 75 * 2);
+    }
+
+    if (mouseX >= SCISSORS_LEFT && mouseX <= SCISSORS_LEFT * 2 && mouseY <= 175 && mouseY >= 75) {
 
         stroke("yellow");
         fill("black");
         rect(SCISSORS_LEFT, 75, 105)
         textSize(75);
-        text(`📃`, PAPER_LEFT, 75 * 2);
+        text(`✂️`, SCISSORS_LEFT, 75 * 2);
+
     }
 
 }
