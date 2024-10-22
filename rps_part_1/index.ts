@@ -21,9 +21,9 @@ function setup() {
     // Display the icons for "stone", "paper", and "scissors".
     textSize(75);
 
-    text(`🪨`, STONE_LEFT, 75 * 2);
-    text(`📃`, PAPER_LEFT, 75 * 2);
-    text(`✂️`, SCISSORS_LEFT, 75 * 2);
+    text(`🪨`, STONE_LEFT, ICON_TOP * 2);
+    text(`📃`, PAPER_LEFT, ICON_TOP * 2);
+    text(`✂️`, SCISSORS_LEFT, ICON_TOP * 2);
 
     textSize(30);
     text(`Computer:`, TEXT_LEFT, 150 * 2);
@@ -32,32 +32,44 @@ function setup() {
 
 
 function mouseMoved() {
-    if (mouseX >= STONE_LEFT && mouseX <= PAPER_LEFT && mouseY <= 175 && mouseY >= 75) {
+    if (mouseX >= STONE_LEFT && mouseX <= PAPER_LEFT && mouseY <= ICON_TOP + ICON_HEIGHT && mouseY >= 75) {
 
         stroke("yellow");
         fill("black");
-        rect(STONE_LEFT, 75, 105)
-        textSize(75);
-        text(`🪨`, STONE_LEFT, 75 * 2);
-    }
-    
-    if (mouseX >= PAPER_LEFT && mouseX <= SCISSORS_LEFT && mouseY <= 175 && mouseY >= 75) {
-
-        stroke("yellow");
-        fill("black");
-        rect(PAPER_LEFT, 75, 105)
-        textSize(75);
-        text(`📃`, PAPER_LEFT, 75 * 2);
+        rect(STONE_LEFT, ICON_TOP, 105)
+        textSize(ICON_TOP);
+        text(`🪨`, STONE_LEFT, ICON_TOP * 2);
+    } else {
+        stroke("black");
+        noFill();
+        rect(STONE_LEFT, ICON_TOP, 105);
     }
 
-    if (mouseX >= SCISSORS_LEFT && mouseX <= SCISSORS_LEFT * 2 && mouseY <= 175 && mouseY >= 75) {
+    if (mouseX >= PAPER_LEFT && mouseX <= SCISSORS_LEFT && mouseY <= ICON_TOP + ICON_HEIGHT && mouseY >= ICON_TOP) {
 
         stroke("yellow");
         fill("black");
-        rect(SCISSORS_LEFT, 75, 105)
-        textSize(75);
-        text(`✂️`, SCISSORS_LEFT, 75 * 2);
+        rect(PAPER_LEFT, ICON_TOP, 105)
+        textSize(ICON_TOP);
+        text(`📃`, PAPER_LEFT, ICON_TOP * 2);
+    } else {
+        stroke("black");
+        noFill();
+        rect(PAPER_LEFT, ICON_TOP, 105);
+    }
 
+    if (mouseX >= SCISSORS_LEFT && mouseX <= SCISSORS_LEFT * 2 && mouseY <= ICON_TOP + ICON_HEIGHT && mouseY >= 75) {
+
+        stroke("yellow");
+        fill("black");
+        rect(SCISSORS_LEFT, ICON_TOP, 105)
+        textSize(ICON_TOP);
+        text(`✂️`, SCISSORS_LEFT, ICON_TOP * 2);
+
+    } else {
+        stroke("black");
+        noFill();
+        rect(SCISSORS_LEFT, ICON_TOP, 105);
     }
 
 }
