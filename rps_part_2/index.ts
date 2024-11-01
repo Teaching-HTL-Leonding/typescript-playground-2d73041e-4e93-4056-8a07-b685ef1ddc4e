@@ -89,19 +89,24 @@ function mouseClicked() {
         text(`Computer: ${randomEmoji}`, TEXT_LEFT, 150 * 2);
     }
 
-        if (mouseX >= PAPER_LEFT && mouseX <= SCISSORS_LEFT && mouseY <= ICON_TOP + ICON_HEIGHT && mouseY >= ICON_TOP) {
-        userInput = "🪨";
+    if (mouseX >= PAPER_LEFT && mouseX <= SCISSORS_LEFT && mouseY <= ICON_TOP + ICON_HEIGHT && mouseY >= ICON_TOP) {
+        userInput = "📃";
 
         fill("yellow");
         textSize(30);
         text(`Computer: ${randomEmoji}`, TEXT_LEFT, 150 * 2);
     }
 
-        if (mouseX >= SCISSORS_LEFT && mouseX <= SCISSORS_LEFT * 2 && mouseY <= ICON_TOP + ICON_HEIGHT && mouseY >= 75) {
-        userInput = "🪨";
+    if (mouseX >= SCISSORS_LEFT && mouseX <= SCISSORS_LEFT * 2 && mouseY <= ICON_TOP + ICON_HEIGHT && mouseY >= 75) {
+        userInput = "✂️";
 
         fill("yellow");
         textSize(30);
         text(`Computer: ${randomEmoji}`, TEXT_LEFT, 150 * 2);
+    }
+
+    if(randomEmoji == userInput) {
+        textSize(50)
+        text(`It's a tie!`, 30, 150 * 3)
     }
 }
