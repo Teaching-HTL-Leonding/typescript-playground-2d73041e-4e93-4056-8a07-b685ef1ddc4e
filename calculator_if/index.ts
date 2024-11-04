@@ -1,6 +1,6 @@
 const MARGIN_NUM = 10;
 
-let num: number = 0;          // Current number entered by the user
+let num = "";          // Current number entered by the user
 let lineHeight: number = 0;   // Height of a line of the responsive layout
 let cellWidth: number = 0;    // Width of a cell of the responsive layout
 
@@ -41,11 +41,12 @@ function draw() {
     
     text(`0`, width / 8 * 2.4, height / 1.09)
     text(`C`, width / 8 * 6.4, height / 1.09)
+    text(`${num}`, width / 1.1, height / 7)
 }
 
 function mouseClicked() {
     if(mouseX > 0 && mouseX < height / 5) {
-        num = 7;
-        console.log(num);
+        num += "7";
     }
+
 }
