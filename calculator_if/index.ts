@@ -42,7 +42,7 @@ function draw() {
     text(`0`, width / 3, height * 4.5 / 5)
     text(`C`, width / 3 * 2.5, height * 4.5 / 5)
     textAlign(RIGHT, CENTER)
-    text(`${num}`, width / 1.1, height / 7)
+    text(`${num}`, width / 1.1, height / 9)
 }
 
 function mouseClicked() {
