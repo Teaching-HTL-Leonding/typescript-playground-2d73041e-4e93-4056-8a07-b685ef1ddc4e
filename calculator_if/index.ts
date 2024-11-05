@@ -22,7 +22,7 @@ function draw() {
     line(width / 3 * 2, height / 5, width / 3 * 2, height / 5 * 5)
 
     fill("white");
-    rect(0, 0, width, height / 5)
+    rect(width / 30, height / 60, width * 0.925, height / 6)
 
     textSize(40);
     fill("black")
