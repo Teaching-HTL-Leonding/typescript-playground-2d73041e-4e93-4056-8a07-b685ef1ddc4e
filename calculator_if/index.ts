@@ -26,17 +26,17 @@ function draw() {
 
     textSize(40);
     fill("black")
-    text(`7`, width / 8, height / 3)
-    text(`8`, width / 8 * 3.7, height / 3)
-    text(`9`, width / 8 * 6.4, height / 3)
+    text(`7`, width / 6, height * 1.5 / 5)
+    text(`8`, width / 6 * 3, height  * 1.5 / 5)
+    text(`9`, width / 6 * 5, height * 1.5 / 5)
 
-    text(`4`, width / 8, height / 1.9)
-    text(`5`, width / 8 * 3.7, height / 1.9)
-    text(`6`, width / 8 * 6.4, height / 1.9)
+    text(`4`, width / 6, height / 2)
+    text(`5`, width / 6 * 3, height / 2)
+    text(`6`, width / 6 * 5, height / 2)
 
-    text(`1`, width / 8, height / 1.4)
-    text(`2`, width / 8 * 3.7, height / 1.4)
-    text(`3`, width / 8 * 6.4, height / 1.4)
+    text(`1`, width / 6, height * 3.5 / 5)
+    text(`2`, width / 6 * 3, height * 3.5 / 5)
+    text(`3`, width / 6 * 5, height * 3.5 / 5)
     
     
     text(`0`, width / 8 * 2.4, height / 1.09)
