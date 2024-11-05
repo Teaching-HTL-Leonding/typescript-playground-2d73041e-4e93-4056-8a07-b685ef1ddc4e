@@ -12,7 +12,7 @@ function setup() {
 
 function draw() {
     background("lightgray");
-
+    textAlign(CENTER, CENTER)
     line(0, height / 5, width, height / 5)
     line(0, height / 5 * 2, width, height / 5 * 2)
     line(0, height / 5 * 3, width, height / 5 * 3)
@@ -41,6 +41,7 @@ function draw() {
     
     text(`0`, width / 8 * 2.4, height / 1.09)
     text(`C`, width / 8 * 6.4, height / 1.09)
+    textAlign(RIGHT, CENTER)
     text(`${num}`, width / 1.1, height / 7)
 }
 
