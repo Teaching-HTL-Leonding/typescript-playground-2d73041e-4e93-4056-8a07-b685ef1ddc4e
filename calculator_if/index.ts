@@ -39,8 +39,8 @@ function draw() {
     text(`3`, width / 6 * 5, height * 3.5 / 5)
     
     
-    text(`0`, width / 8 * 2.4, height / 1.09)
-    text(`C`, width / 8 * 6.4, height / 1.09)
+    text(`0`, width / 3, height * 4.5 / 5)
+    text(`C`, width / 3 * 2.5, height * 4.5 / 5)
     textAlign(RIGHT, CENTER)
     text(`${num}`, width / 1.1, height / 7)
 }
