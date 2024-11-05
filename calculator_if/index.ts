@@ -45,7 +45,7 @@ function draw() {
 }
 
 function mouseClicked() {
-    if(mouseX > 0 && mouseX < height / 5) {
+    if(mouseX > 0 && mouseX < height / 5 && mouseY < height / 2.6 && mouseY > height / 6) {
         num += "7";
     }
 
