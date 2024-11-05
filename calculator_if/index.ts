@@ -46,8 +46,11 @@ function draw() {
 }
 
 function mouseClicked() {
-    if(mouseX > 0 && mouseX < height / 3 && mouseY < height / 5 * 2 && mouseY > height / 6) {
+    if(mouseX > 0 && mouseX < width / 3 && mouseY < height / 5 * 2 && mouseY > height / 6) {
         num += "7";
     }
 
+    if(mouseX > width / 3 && mouseX < width / 5 * 2 && mouseY < height / 5 * 2 && mouseY > height / 6) {
+        num += "8";
+    }
 }
