@@ -27,7 +27,7 @@ function draw() {
     textSize(40);
     fill("black")
     text(`7`, width / 6, height * 1.5 / 5)
-    text(`8`, width / 6 * 3, height  * 1.5 / 5)
+    text(`8`, width / 6 * 3, height * 1.5 / 5)
     text(`9`, width / 6 * 5, height * 1.5 / 5)
 
     text(`4`, width / 6, height / 2)
@@ -37,8 +37,8 @@ function draw() {
     text(`1`, width / 6, height * 3.5 / 5)
     text(`2`, width / 6 * 3, height * 3.5 / 5)
     text(`3`, width / 6 * 5, height * 3.5 / 5)
-    
-    
+
+
     text(`0`, width / 3, height * 4.5 / 5)
     text(`C`, width / 3 * 2.5, height * 4.5 / 5)
     textAlign(RIGHT, CENTER)
@@ -46,11 +46,14 @@ function draw() {
 }
 
 function mouseClicked() {
-    if(mouseX > 0 && mouseX < width / 3 && mouseY < height / 5 * 2 && mouseY > height / 6) {
+    if (mouseX > 0 && mouseX < width / 3 && mouseY < height / 5 * 2 && mouseY > height / 5) {
         num += "7";
     }
 
-    if(mouseX > width / 3 && mouseX < width / 5 * 2 && mouseY < height / 5 * 2 && mouseY > height / 6) {
+    if (mouseX > width / 3 && mouseX < width / 3 * 2 && mouseY < height / 5 * 2 && mouseY > height / 5) {
         num += "8";
+    }
+    if (mouseX > width / 3 * 2 && mouseX < width / 3 * 3 && mouseY < height / 5 * 2 && mouseY > height / 5) {
+        num += "9";
     }
 }
