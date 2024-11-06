@@ -59,4 +59,20 @@ function mouseClicked() {
     if (mouseX > 0 && mouseX < width / 3 && mouseY < height / 5 * 3 && mouseY > height / 5 * 2) {
         num += "4";
     }
+    if (mouseX > width / 3 && mouseX < width / 3 * 2 && mouseY < height / 5 * 3 && mouseY > height / 5 * 2) {
+        num += "5";
+    }
+    if (mouseX > width / 3 * 2 && mouseX < width / 3 * 3 && mouseY < height / 5 * 3 && mouseY > height / 5 * 2) {
+        num += "6";
+    }
+
+    if (mouseX > 0 && mouseX < width / 3 && mouseY < height / 5 * 4 && mouseY > height / 5 * 3) {
+        num += "1";
+    }
+    if (mouseX > width / 3 && mouseX < width / 3 * 2 && mouseY < height / 5 * 4 && mouseY > height / 5 * 3) {
+        num += "2";
+    }
+    if (mouseX > width / 3 * 2 && mouseX < width / 3 * 3 && mouseY < height / 5 * 4 && mouseY > height / 5 * 3) {
+        num += "3";
+    }
 }
