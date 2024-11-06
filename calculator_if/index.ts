@@ -1,5 +1,3 @@
-const MARGIN_NUM = 10;
-
 let num = "";          // Current number entered by the user
 let lineHeight: number = 0;   // Height of a line of the responsive layout
 let cellWidth: number = 0;    // Width of a cell of the responsive layout
