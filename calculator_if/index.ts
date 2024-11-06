@@ -79,6 +79,6 @@ function mouseClicked() {
     }
 
     if (mouseX > width / 3 * 2 && mouseX < width / 3 * 3 && mouseY < height / 5 * 5 && mouseY > height / 5 * 4) {
-        num = "0"
+        num = "";
     }
 }
