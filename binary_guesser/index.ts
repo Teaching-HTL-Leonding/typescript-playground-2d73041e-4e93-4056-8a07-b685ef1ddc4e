@@ -31,13 +31,20 @@ let digi3 = 0;
 let digi4 = 0;
 
 function mouseClicked() {
-  if(mouseX > width / 6 && mouseX < width / 6 * 2 - 20 && mouseY > height / 3 && mouseY < height / 3 * 2) {
+  if (mouseX > width / 6 && mouseX < width / 6 * 2 - 20 && mouseY > height / 3 && mouseY < height / 3 * 2) {
     digi1 = 1;
+    fill("black");
+    noStroke;
+    rect(width / 6, height / 3, width / 8, height / 3)
+    fill("yellow");
+    text(`${digi1}`, width / 4.4, height / 3 * 1.5)
   }
-  if(mouseX > width / 6 * 2 && mouseX < width / 6 * 2 * 2 - 20 && mouseY > height / 3 && mouseY < height / 3 * 2) {
-    Error with coordianates
-    
-    digi1 = 1;
-    rect(10, 10, 10)
+  if (mouseX > width / 6 * 2 && mouseX < width / 6 * 3 - 20 && mouseY > height / 3 && mouseY < height / 3 * 2) {
+    digi2 = 1;
+    fill("black");
+    noStroke;
+    rect(width / 6, height / 3, width / 8, height / 3)
+    fill("yellow");
+    text(`${digi1}`, width / 4.4, height / 3 * 1.5)
   }
 }
