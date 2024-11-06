@@ -30,6 +30,15 @@ let digi2 = 0;
 let digi3 = 0;
 let digi4 = 0;
 
+let binary_num = num = digi1 * Math.pow(2, 3) + digi2 * Math.pow(2, 2) + digi3 * Math.pow(2, 1) + digi4 * Math.pow(2, 0)
+let binary_random_num_p1 = num % 2
+let binary_random_num_p2 = binary_random_num_p1 % 2
+let binary_random_num_p3 = binary_random_num_p2 % 2
+let binary_random_num_p4 = binary_random_num_p3 % 2
+
+let binary_random_num = binary_random_num_p4
+
+
 function mouseClicked() {
   if (mouseX > width / 6 && mouseX < width / 6 * 2 - 20 && mouseY > height / 3 && mouseY < height / 3 * 2) {
     if (digi1 === 0) {
@@ -91,4 +100,9 @@ function mouseClicked() {
       text(`${digi4}`, width / 4.4 * 3.2, height / 3 * 1.5)
     }
   }
+
+  if (binary_random_num === binary_num) {
+    rect(10, 10 ,10)
+  }
+
 }
