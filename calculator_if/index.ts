@@ -75,4 +75,8 @@ function mouseClicked() {
     if (mouseX > width / 3 * 2 && mouseX < width / 3 * 3 && mouseY < height / 5 * 4 && mouseY > height / 5 * 3) {
         num += "3";
     }
+
+       if (mouseX > 0 && mouseX < width / 3 * 2 && mouseY < height / 5 * 5 && mouseY > height / 5 * 4) {
+        num += "0";
+    } 
 }
