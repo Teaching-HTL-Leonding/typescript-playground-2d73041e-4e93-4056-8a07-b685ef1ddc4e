@@ -62,18 +62,33 @@ function mouseClicked() {
     }
   }
   if (mouseX > width / 6 * 3 && mouseX < width / 6 * 4 - 20 && mouseY > height / 3 && mouseY < height / 3 * 2) {
-    if (digi2 === 0) {
-      digi2 = 1;
+    if (digi3 === 0) {
+      digi3 = 1;
       fill("black");
       rect(width / 6 * 3, height / 3, width / 8, height / 3)
       fill("yellow");
       text(`${digi3}`, width / 4.4 * 2.49, height / 3 * 1.5)
-    } else if (digi2 === 1) {
-      digi2 = 0;
+    } else if (digi3 === 1) {
+      digi3 = 0;
       fill("black");
       rect(width / 6 * 3, height / 3, width / 8, height / 3)
       fill("yellow");
       text(`${digi3}`, width / 4.4 * 2.49, height / 3 * 1.5)
+    }
+  }
+  if (mouseX > width / 6 * 4 && mouseX < width / 6 * 5 - 20 && mouseY > height / 3 && mouseY < height / 3 * 2) {
+    if (digi4 === 0) {
+      digi4 = 1;
+      fill("black");
+      rect(width / 6 * 4, height / 3, width / 8, height / 3)
+      fill("yellow");
+      text(`${digi4}`, width / 4.4 * 3.2, height / 3 * 1.5)
+    } else if (digi4 === 1) {
+      digi4 = 0;
+      fill("black");
+      rect(width / 6 * 4, height / 3, width / 8, height / 3)
+      fill("yellow");
+      text(`${digi4}`, width / 4.4 * 3.2, height / 3 * 1.5)
     }
   }
 }
