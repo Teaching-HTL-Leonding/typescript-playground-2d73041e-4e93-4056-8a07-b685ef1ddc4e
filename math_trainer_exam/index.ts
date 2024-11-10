@@ -8,9 +8,9 @@ let optionNum3;
 
 let correctNum = 0;
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(400, 600);
     background("black");
-    optionNum1 = Math.floor(random(0, 100));
+    optionNum1 = Math.floor(random(0, 100)); // RS: Mistake, should be 1, 101 not 0, 100
     optionNum2 = Math.floor(random(0, 100));
     optionNum3 = Math.floor(random(0, 100));
 
@@ -20,6 +20,7 @@ function setup() {
     let operator;
     let randomOperator = Math.floor(random(0, 3));
 
+    // RS: Solved second minimum requirement using if statement
     if (randomOperator === 0) {
         operator = "+";
         correctNum = calcNum1 + calcNum2
@@ -66,6 +67,8 @@ function mouseClicked() {
     textAlign(CENTER, CENTER);
     fill("green")
     textSize(50)
+
+    // RS: Solved third minimum requirement with if statement
     if (correctNum === loc1 && mouseX > width / 20 && mouseX < width / 3) {
         text(`${correctNum} ist richtig!`, width / 2, height / 2 * 1.6)
     }
