@@ -30,7 +30,7 @@ function setup() {
     while (i < SIZE) {
         strokeWeight(2);
         stroke("red");
-        line(GRID, , GRID * (i / GRID), i);
+        line(SIZE - GRID,  0, SIZE, GRID * (i / GRID));
         i += GRID;
         ie -= 5;
     }
