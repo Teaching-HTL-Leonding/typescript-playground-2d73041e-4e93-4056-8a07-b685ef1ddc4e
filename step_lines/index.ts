@@ -27,21 +27,10 @@ function setup() {
         ie -= 5;
     }
 
-    while (i < SIZE) {
-        strokeWeight(2);
-        stroke("red");
-        line(SIZE - GRID,  0, SIZE, GRID * (i / GRID));
-        i += GRID;
-        ie -= 5;
-    }
-    
-    strokeWeight(2);
-
-    // Draw left part of the lines
-    stroke("yellow");
-    // <<< Write your code here
-
-    // Draw right part of the lines
     stroke("red");
-    // <<< Write your code here
+    i = GRID;
+    while (i < SIZE) {
+        line(GRID * (i / GRID), i, SIZE - GRID, i);
+        i += GRID;
+    }
 }
