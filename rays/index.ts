@@ -28,10 +28,11 @@ function mouseMoved() {
   while (i < SIZE) {       // STEP 2: Check the loop condition
     stroke("green");
 
-    line(i, 0, mouseX, mouseY); // STEP 3: Do whatever you want to do repeatedly
-    line(mouseX, mouseY,  0, i); // STEP 3: Do whatever you want to do repeatedly
+    line(i, MARGIN, mouseX, mouseY); // STEP 3: Do whatever you want to do repeatedly
+    line(i, SIZE - MARGIN, mouseX, mouseY)
     stroke("yellow");
-    line(0, i, mouseX, mouseY); // STEP 3: Do whatever you want to do repeatedly
+    line(MARGIN, i, mouseX, mouseY); // STEP 3: Do whatever you want to do repeatedly
+    line(SIZE - MARGIN, i, mouseX, mouseY)
     i += MARGIN;           // STEP 4: Update the loop variable
   }
 }
