@@ -8,19 +8,15 @@ function setup() {
 
     noStroke();
 
-    let i = GRID;
-    while(i < SIZE - GRID){
+    for(let i = GRID; i < SIZE - GRID; i+= GRID){
         fill("yellow");
         rect(i, i, 25, 25)
-        i += GRID;
     }
 
     
-    i = GRID;
-    while(i < SIZE - GRID){
+    for(let i = GRID; i < SIZE - GRID; i += GRID) {
         fill("green");
         rect(i, SIZE - i - 25, 25, 25);
-        i += GRID;
     }
 
     // <<< Add your code here
