@@ -20,10 +20,14 @@ function mouseMoved() {
 
 
 
+    for (let d = 0; d < width; d += 10) {
+        translate(d, 0)
+        for (let i = 0; i < height; i += 10) {
+            line(0, 0 + i, 10, 5 + i)
+            line(0, 10 + i, 10, 5 + i)
+        }
+        resetMatrix()
+    }
 
 
-for(let i = 5; i < height; i += 5)
-    line(0, 0, 10, 5 + 5 * 6)
-    line(0, 10,10, 5)
-    translate(0, 10)
 }
