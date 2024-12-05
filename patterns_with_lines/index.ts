@@ -33,6 +33,7 @@ function mouseMoved() {
     }
 
     fill("black")
+    noStroke()
     rect(0, height - 20, width)
 
     textSize(12)
